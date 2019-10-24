@@ -16,7 +16,7 @@ func ShareWith(name string) string {
 		fallthrough
 	case "Zaphod":
 		return fmt.Sprintf("One for %s, one for me.", name)
+	default:
+		return "One for you, one for me."
 	}
-
-	return "One for you, one for me."
 }
