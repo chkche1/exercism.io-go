@@ -9,14 +9,9 @@ import "fmt"
 
 // ShareWith should have a comment documenting it.
 func ShareWith(name string) string {
-	switch name {
-	case "Alice":
-		fallthrough
-	case "Bob":
-		fallthrough
-	case "Zaphod":
-		return fmt.Sprintf("One for %s, one for me.", name)
-	default:
+	if len(name) == 0 {
 		return "One for you, one for me."
 	}
+
+	return fmt.Sprintf("One for %s, one for me.", name)
 }
