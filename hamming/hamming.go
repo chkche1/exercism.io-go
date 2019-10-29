@@ -4,7 +4,7 @@ import "errors"
 
 func Distance(a, b string) (int, error) {
 	if len(a) != len(b) {
-		return 0, errors.New("Non-equal strings")
+		return 0, errors.New("String lengths differ")
 	}
 
 	count := 0
