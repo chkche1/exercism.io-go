@@ -1,7 +1,6 @@
 package acronym
 
 import (
-	//"fmt"
 	"regexp"
 	"strings"
 )
@@ -16,9 +15,7 @@ func Abbreviate(s string) string {
 
 	var res strings.Builder
 	matches := r.FindAll([]byte(s), -1)
-	//fmt.Println(s)
 	for _, v := range matches {
-		//fmt.Println(v)
 
 		if len(v) == 0 {
 			continue
