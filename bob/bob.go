@@ -5,7 +5,9 @@ import (
 	"unicode"
 )
 
-// Hey should have a comment documenting it.
+/*
+Return Bob's answer based on the input remark
+ */
 func Hey(remark string) string {
 	remark = strings.TrimSpace(remark)
 	if remark == "" {
