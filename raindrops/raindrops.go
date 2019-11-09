@@ -1,26 +1,23 @@
 package raindrops
 
-import (
-	"strconv"
-	"strings"
-)
+import "strconv"
 
 /*
 Convert a number into a string that contains raindrop sounds corresponding to certain potential factors
  */
 func Convert(input int) string {
-	res := strings.Builder{}
+	var res string
 	if input % 3 == 0 {
-		res.WriteString("Pling")
+		res += "Pling"
 	}
 	if input % 5 == 0 {
-		res.WriteString("Plang")
+		res += "Plang"
 	}
 	if input % 7 == 0 {
-		res.WriteString("Plong")
+		res += "Plong"
 	}
-	if res.Len() == 0 {
-		res.WriteString(strconv.Itoa(input))
+	if len(res) == 0 {
+		res += strconv.Itoa(input)
 	}
-	return res.String()
+	return res
 }
