@@ -11,7 +11,7 @@ func IsIsogram(s string) bool {
 	set := make(map[rune]bool)
 	for _, c := range s {
 		c = unicode.ToLower(c)
-		if unicode.IsSpace(c) || unicode.IsOneOf(hyp, c) {
+		if c == ' ' || c == '-' {
 			continue
 		}
 		if set[c] {
