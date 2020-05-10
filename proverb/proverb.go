@@ -3,13 +3,13 @@ package proverb
 import "fmt"
 
 const (
-	format = "For want of a %s the %s was lost."
+	format   = "For want of a %s the %s was lost."
 	lastLine = "And all for the want of a %s."
 )
 
 /*
 Given a list of inputs, generate the relevant proverb.
- */
+*/
 func Proverb(rhyme []string) []string {
 	if len(rhyme) == 0 {
 		return rhyme

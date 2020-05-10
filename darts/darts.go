@@ -1,13 +1,13 @@
 /*
 Package that holds functions for the Darts game
- */
+*/
 package darts
 
 /*
 Write a function that returns the earned points in a single toss of a Darts game
- */
+*/
 func Score(x, y float64) int {
-	r := x * x + y * y
+	r := x*x + y*y
 	switch {
 	case r <= 1:
 		return 10

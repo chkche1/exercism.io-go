@@ -1,6 +1,6 @@
 /*
 Package gigasecond implements a simple method for adding a gigasecond to Time
- */
+*/
 package gigasecond
 
 // import path for the time package from the standard library

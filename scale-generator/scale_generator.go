@@ -7,7 +7,7 @@ var (
 	flatChromatics  = []string{"A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab"}
 	//sharps = []string{"G", "D", "A", "E", "B", "F#", "e", "b", "f#", "c#", "g#", "d#", "C", "a"}
 	flats = []string{"F", "Bb", "Eb", "Ab", "Db", "Gb", "d", "g", "c", "f", "bb", "eb"}
-	skips   = map[rune]int{'m': 1, 'M': 2, 'A': 3}
+	skips = map[rune]int{'m': 1, 'M': 2, 'A': 3}
 )
 
 func Scale(tonic, interval string) []string {

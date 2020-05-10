@@ -7,7 +7,7 @@ import (
 
 /*
 Return Bob's answer based on the input remark
- */
+*/
 func Hey(remark string) string {
 	remark = strings.TrimSpace(remark)
 	if remark == "" {
@@ -39,7 +39,7 @@ func allCaps(s string) bool {
 }
 
 func isQuestion(s string) bool {
-	return s[len(s) - 1] == '?'
+	return s[len(s)-1] == '?'
 }
 
 func hasLetter(s string) bool {

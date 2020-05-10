@@ -1,6 +1,6 @@
 package strand
 
-var rnaMap = map[rune]rune {
+var rnaMap = map[rune]rune{
 	'G': 'C',
 	'C': 'G',
 	'T': 'A',
